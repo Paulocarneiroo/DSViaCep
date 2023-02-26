@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSViaCEP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="nav-container">
+        <nav class="nav-main">
+            <h1>DSViaCEP</h1>
+            <div class="contact-link">contato</div>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section" class="form-container">
+            <div class="card-form">
+                <form id="newAddress">
+                    <div class="form-control">
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" placeholder="CEP" class="form-input">
+                        <div class="error-message" data-error="cep"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="street">STREET:</label>
+                        <input type="text" name="street" id="street" placeholder="Logradouro" class="form-input"
+                            disabled>
+                    </div>
+                    <div class="form-control">
+                        <label for="number">NUMBER:</label>
+                        <input type="text" name="number" id="number" placeholder="Número" class="form-input">
+                        <div class="error-message" data-error="number"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">CITY:</label>
+                        <input type="text" name="city" id="city" placeholder="Cidade" class="form-input" disabled>
+                    </div>
+                    <div class="btn-container">
+                        <button name="btnSave" class="btn btn-left" type="submit">Salvar</button>
+                        <button name="btnClear" class="btn btn-right">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="list-section" class="list-container">
+            <div class="card-list-item">
+                <h3>São Paulo</h1>
+                    <p class="address-line">Rua dos Jardins, 720</p>
+                    <p class="cep-line">11200-345</p>
+            </div>
+        </section>
+    </main>
+    <section id="modal-contact" class="modal-container">
+        <div class="modal-box">
+            <div class="modal-content">
+                <p>@paulocarneiroo_</p>
+            </div>
+            <button id="modal-contact-close" class="btn">Fechar</button>
+        </div>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
