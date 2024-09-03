@@ -11,6 +11,11 @@ html, body{
     background-color: #000;
 }
 
+a{
+    color: #ddd;
+    text-decoration: none;
+}
+
 .nav-container{
     height: 80px;
     background-color: #860397;
